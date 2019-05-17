@@ -1,0 +1,9 @@
+{
+  "id": "activity-id",
+  "displayName": "...",
+  "type": "foreach",
+  "source": { "type": "expression type", "value": "Expression for the source of enumeration." },
+  "body": {
+    "comment": "Activity to be executed for each item in the `source`."
+  }
+}

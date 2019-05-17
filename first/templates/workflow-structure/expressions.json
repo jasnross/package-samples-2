@@ -1,0 +1,41 @@
+{
+  "expression-string-value": {
+    "type": "literal:string",
+    "value": "string constant."
+  },
+  "expression-numeric-value": {
+    "type": "literal:number",
+    "value": 42
+  },
+  "expression-object-value": {
+    "type": "literal:object",
+    "value": {
+      "name": "Max",
+      "location": "Seattle"
+    }
+  },
+  "expression-array-value": {
+    "type": "literal:object",
+    "value": ["red", "blue", "green"]
+  },
+  "expression-reference-to-workflow-instance-input": {
+    "type": "eval:string",
+    "value": "workflow.inputs.MyInput"
+  },
+  "expression-reference-to-activity-input": {
+    "type": "eval:string",
+    "value": "activity7.inputs.b"
+  },
+  "expression-reference-to-activity-output": {
+    "type": "eval:object",
+    "value": "activity7.outputs.c"
+  },
+  "expression-using-formatting": {
+    "type": "format",
+    "value": "{{workflow.inputs.MyInput}} followed by {{activity7.outputs.c}}!"
+  },
+  "expression-using-expression-language": {
+    "type": "eval:number",
+    "value": "workflow.inputs.Value1 * activity7.outputs.RecordCount"
+  }
+}

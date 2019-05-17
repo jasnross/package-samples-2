@@ -1,0 +1,60 @@
+// Ark package manifest
+{
+  // Version of the document schema
+  "apiVersion": "1.0.0",
+  
+  // Globally unique package name
+  "name": "first",
+
+  // Readable, short name of the package
+  "displayName": "First Package",
+
+  // Description of the package
+  "description": "This is description for the First Package.",
+
+  // Package version as defined in https://semver.org/
+  // Initially version can be established manually
+  // Later, additional automated checks can be implemented:
+  // - Cannot publish a verion that has already been published
+  // - No changes in any task signatures - patch version
+  // - Only back-compatible changes in task signatures - minor version
+  // - Otherwise, major verion
+  "version": "1.2.3",
+
+  // Package vendor
+  // Matches globally unique Ark tenant name of the account that will publish the package
+  "publisher": "bittitan",
+
+  // Small image or icon associated with the package
+  "icon": "icon.png",
+
+  // A set of keywords or phrases that users can search for to find templates
+  "keywords": [
+    "communication",
+    "configuration management",
+    "network",
+    "router",
+    "security"
+  ],
+
+  // Indicates package license
+  "license": "license-type",
+
+  // Type of the package
+  // Possible options are:
+  // 'powershell'
+  // 'nodejs'
+  "type": "powershell",
+
+  // PowerShell-specific configuration
+  "powershell": {
+    // Version of PowerShell
+    // May include operating system specification
+    "engine": "5.1",
+
+    // Package initialization script
+    // Default location is 'install.ps1' in the root folder of the package
+    // This setting can be used to override name and location of the script
+    "install": "install.ps1"
+  }
+}
