@@ -29,7 +29,7 @@
         "type": "packageTask",
         "displayName": "Echo",
         "description": "Call echo task.",
-        "package": "voleer/getting-started@0.1.0",
+        "package": "jasonr/getting-started@0.1.0",
         "task": "echo",
         "inputs": {
           "message": {
@@ -43,7 +43,7 @@
         "type": "packageTask",
         "displayName": "Send email",
         "description": "Send email to the user.",
-        "package": "voleer/sendgrid@0.1.6",
+        "package": "jasonr/sendgrid@0.1.6",
         "task": "send-email",
         "inputs": {
           "apiKey": {
@@ -52,7 +52,7 @@
           },
           "fromAddress": {
             "type": "literal:string",
-            "value": "voleer@voleer.dev"
+            "value": "jasonr@voleer.dev"
           },
           "toAddress": {
             "type": "eval:string",
@@ -69,5 +69,5 @@
         }
       }
     ]
-  }  
+  }
 }
