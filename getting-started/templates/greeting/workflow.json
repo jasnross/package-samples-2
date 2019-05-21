@@ -1,5 +1,4 @@
 {
-  "apiVersion": "1.0.0",
   "inputs": {
     "name": {
       "type": "string",
